@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import Calculator from './temperature'
 import WelcomeDialog from "./combined"
-import FilterableProductTable from "./filterable"
+// import FilterableProductTable from "./filterable"
 // import './index.css';
 // import App from './App';
 // import Counter from './Counter';
@@ -313,14 +313,14 @@ class Reservation extends React.Component{
 
 /*--------------------------------数据-----------------------------------------------*/
 
-const PRODUCTS =[
-    {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
-    {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
-    {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
-    {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
-    {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
-    {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
-];
+// const PRODUCTS =[
+//     {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
+//     {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
+//     {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
+//     {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
+//     {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
+//     {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
+// ];
 
 
 /*-------------------------------统一渲染区域------------------------------------*/
@@ -347,19 +347,19 @@ function App(){
             <br/>
             <WelcomeDialog />
             <br/>
-            <FilterableProductTable products={PRODUCTS}/>
+            {/*<FilterableProductTable products={PRODUCTS}/>*/}
         </div>
     )
 }
 
-
-ReactDOM.render(
-    // element,
-    // element2,
-    // <h1>Hello World!</h1>,
-    <App />,
-    document.getElementById('root'),
-);
+//
+// ReactDOM.render(
+//     // element,
+//     // element2,
+//     // <h1>Hello World!</h1>,
+//     <App />,
+//     document.getElementById('root'),
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
